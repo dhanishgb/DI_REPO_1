@@ -1,2 +1,2 @@
-# repo_new
-New Developer
+# DI_REPO_1
+Junior Developer Student

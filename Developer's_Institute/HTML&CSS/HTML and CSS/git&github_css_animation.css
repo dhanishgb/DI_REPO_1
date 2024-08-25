@@ -1,0 +1,107 @@
+/* Common style for all divs */
+body > div {
+    width: 483px;
+    height: 298px;
+    background: #676470;
+    transition: all 0.3s ease;
+    margin: 20px auto; /* Centering the divs and adding space between them */
+    text-align: center;
+    line-height: 298px; /* Centering text vertically */
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Specific animations */
+
+/* 1. Fade In */
+.fade {
+    opacity: 0.5;
+}
+.fade:hover {
+    opacity: 1;
+}
+
+/* 2. Change Color */
+.color:hover {
+    background: #53a7ea;
+}
+
+/* 3. Grow */
+.grow:hover {
+    transform: scale(1.3);
+}
+
+/* 4. Shrink */
+.shrink:hover {
+    transform: scale(0.8);
+}
+
+/* 5. Rotate */
+.rotate:hover {
+    transform: rotateZ(-30deg);
+}
+
+/* 6. Square to Circle */
+.circle:hover {
+    border-radius: 50%;
+}
+
+/* 7. 3D Shadow */
+.threed:hover {
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+/* 8. Swing */
+@-webkit-keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    65% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    65% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swing:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+/* 9. Inset Border */
+.border:hover {
+    box-shadow: inset 0 0 0 25px #53a7ea;
+}

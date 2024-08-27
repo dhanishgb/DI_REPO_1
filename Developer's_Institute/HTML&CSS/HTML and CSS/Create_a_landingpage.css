@@ -1,0 +1,104 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-section {
+    padding: 50px;
+    background-image: url('https://www.freepik.com/free-photo/global-globalization-world-map-environmental-concservation-concept_17106240.htm#fromView=search&page=1&position=22&uuid=d72a3cb3-0c4c-4d00-a171-52d4602c5387'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.testimonial-section h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.stat {
+    width: 30%;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 36px;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 14px;
+    color: #6c6c6c;
+    margin: 10px 0 0;
+    letter-spacing: 1.5px;
+}
+
+.testimonial-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-block {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 30%;
+}
+
+.testimonial-block p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.profile strong {
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .stats, .testimonial-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat, .testimonial-block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .stat h2 {
+        font-size: 28px;
+    }
+}

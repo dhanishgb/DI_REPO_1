@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left, .right {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 10px 0;
+}

@@ -9,7 +9,7 @@ function playTheGame() {
     }
 
     // Ask the user to enter a number between 0 and 10
-    let userNumber = prompt("Please enter a number between 0 and 10:");
+    let userNumber =prompt("Please enter a number between 0 and 10:");
 
     // Check if the input is a number
     if (isNaN(userNumber)) {

@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9cc; /* Light yellow background */
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.number, button.operator {
+    background-color: #4CAF50; /* Green buttons */
+    color: white;
+}
+
+button.operator {
+    background-color: #FF9800; /* Orange buttons for operators */
+}
+
+button.special {
+    background-color: #1E88E5; /* Blue for reset */
+    color: white;
+}
+
+button.clear {
+    background-color: #F44336; /* Red for clear */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    background-color: darken(#4CAF50, 10%);
+}

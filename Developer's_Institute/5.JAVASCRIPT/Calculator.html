@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      button {
-        width:70px;
-        height:70px;
-      }
-    </style>
-  </head>
-  <body>
-    <button type="button" name="button" onclick="number(1);">1</button>
-    <button type="button" name="button" onclick="number(2);">2</button>
-    <button type="button" name="button" onclick="number(3);">3</button>
-    <br>
-    <button type="button" name="button" onclick="number(4);">4</button>
-    <button type="button" name="button" onclick="number(5);">5</button>
-    <button type="button" name="button" onclick="number(6);">6</button>
-    <br>
-    <button type="button" name="button" onclick="number(7);">7</button>
-    <button type="button" name="button" onclick="number(8);">8</button>
-    <button type="button" name="button" onclick="number(9);">9</button>
-    <button type="button" name="button" onclick="number(0);">0</button>
-    <br>
-    <button type="button" name="button" onclick="operator('+');">+</button>
-    <button type="button" name="button" onclick="operator('-');">-</button>
-    <button type="button" name="button" onclick="operator('*');">*</button>
-    <button type="button" name="button" onclick="operator('/');">/</button>
-    <button type="button" name="button" onclick="equal();">=</button>
-    <script src="js/main.js" charset="utf-8"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <button class="number" onclick="number(0)">0</button>
+            <button class="number" onclick="number(1)">1</button>
+            <button class="number" onclick="number(2)">2</button>
+            <button class="number" onclick="number(3)">3</button>
+            <button class="number" onclick="number(4)">4</button>
+            <button class="number" onclick="number(5)">5</button>
+            <button class="number" onclick="number(6)">6</button>
+            <button class="number" onclick="number(7)">7</button>
+            <button class="number" onclick="number(8)">8</button>
+            <button class="number" onclick="number(9)">9</button>
+            <button class="operator" onclick="operator('.')">.</button>
+            <button class="operator" onclick="operator('+')">+</button>
+            <button class="operator" onclick="operator('-')">-</button>
+            <button class="operator" onclick="operator('*')">X</button>
+            <button class="operator" onclick="operator('/')">/</button>
+            <button class="operator" onclick="equal()">=</button>
+            <button class="special" onclick="resetCalculator()">reset</button>
+            <button class="clear" onclick="clearDisplay()">clear</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
 </html>

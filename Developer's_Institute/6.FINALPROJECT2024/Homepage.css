@@ -42,8 +42,9 @@ a:hover {
     display: inline-block; /* Ensures it behaves as a block-level element */
 }
 
+/* Hover Effect for Logo */
 .logo:hover {
-    padding-left: -10px; /* Shift left by 10px on hover */
+    transform: translateX(-10px); /* Moves logo 10px to the left */
 }
 
 .nav ul {

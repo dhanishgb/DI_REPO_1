@@ -1,29 +1,29 @@
-/* Trainers Section */
-.trainers {
+/* Workout Programs Section */
+.workouts {
     padding: 4rem 0;
     text-align: center;
     background-color: var(--secondary-bg-color);
 }
 
-.trainers h2 {
+.workouts h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.trainers p {
+.workouts p {
     color: var(--muted-text-color);
     margin-bottom: 2rem;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-.trainer-grid {
+.workout-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-.trainer-card {
+.workout-card {
     background-color: #222;
     padding: 2rem;
     border-radius: 12px;
@@ -32,31 +32,30 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.trainer-card:hover {
+.workout-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.trainer-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.workout-image {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 1rem;
-    border: 3px solid var(--primary-color);
 }
 
-.trainer-card h3 {
+.workout-card h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
-.trainer-card p {
+.workout-card p {
     color: var(--muted-text-color);
     margin-bottom: 1rem;
 }
 
-.trainer-link {
+.workout-link {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
@@ -66,13 +65,13 @@
     transition: background-color 0.3s ease;
 }
 
-.trainer-link:hover {
+.workout-link:hover {
     background-color: #ffc107;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-    .trainer-grid {
+    .workout-grid {
         grid-template-columns: 1fr;
     }
 }

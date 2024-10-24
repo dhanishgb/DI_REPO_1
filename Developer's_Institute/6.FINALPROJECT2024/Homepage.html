@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Planet</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body>
 
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <h1>Fitness Planet</h1>
-            </div>
+            <!-- Logo as a clickable link -->
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">Fitness Planet</h1>
+            </a>
+
+            <!-- Navigation Menu -->
             <nav class="nav">
-                <ul>
-                    <a href="about.html">About Us</a>
-                    <a href="trainers.html">Trainers</a>
-                    <a href="programs.html">Programs</a>
-                    <a href="#my_bookings">My Bookings</a>
-                    <a href="#my_purchases">My Purchases</a>
+                <ul class="nav-list">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="my_bookings.html">My Bookings</a></li>
+                    <li><a href="my_purchases.html">My Purchases</a></li>
                 </ul>
-                <!-- Sign In and Register Buttons -->
-                <div class="auth-buttons">
-                    <a href="signin.html" class="btn sign-in">Sign In</a>
-                    <a href="register.html" class="btn register">Register</a>
-                </div>
             </nav>
+
+            <!-- Sign In and Register Buttons -->
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn sign-in">Sign In</a>
+                <a href="register.html" class="btn register">Register</a>
+            </div>
         </div>
     </header>
 
@@ -54,17 +58,17 @@
             <h2>Our Trainers</h2>
             <div class="trainer-grid">
                 <div class="trainer">
-                    <img src="https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trainer 1">
+                    <img src="https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg" alt="Trainer 1">
                     <h3>John Doe</h3>
                     <p>Strength Trainer</p>
                 </div>
                 <div class="trainer">
-                    <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trainer 2">
+                    <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg" alt="Trainer 2">
                     <h3>Jane Smith</h3>
                     <p>Yoga Instructor</p>
                 </div>
                 <div class="trainer">
-                    <img src="https://images.pexels.com/photos/8745176/pexels-photo-8745176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Trainer 3">
+                    <img src="https://images.pexels.com/photos/8745176/pexels-photo-8745176.jpeg" alt="Trainer 3">
                     <h3>Michael Lee</h3>
                     <p>Cardio Coach</p>
                 </div>

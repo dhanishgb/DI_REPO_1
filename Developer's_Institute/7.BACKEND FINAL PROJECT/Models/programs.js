@@ -1,34 +1,31 @@
-//import Database
-
-//import { Sequelize, DataTypes } from 'sequelize';
-const { Sequelize, DataTypes } = require('sequelize');
-
+const { DataTypes } = require('sequelize');
 const db = new Sequelize('postgresql://class143_owner:BThOV0lZb3YU@ep-holy-lab-a2xm39f8.eu-central-1.aws.neon.tech/FitnessPlanet?sslmode=require');
+// database connection object
 
-const User = db.define('User', {
+const Progra = db.define('Program', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
-    username: {
+    name: {
         type: DataTypes.STRING,
         unique: true
     },
-    password: DataTypes.STRING,
-    type: {
-        type: DataTypes.STRING,
-        defaultValue: 'user'
-    },
+    price: DataTypes.FLOAT,
+    quantity: DataTypes.INTEGER,
+    description: DataTypes.STRING
+    
 });
 
 db.sync()
 .then(() => {
-    console.log('User table created if not already exists.');
+    console.log('Product table created if not already exists.');
 })
 .catch((error) => {
     console.error('Error creating table:', error);
 });
 
 
-module.exports = User;
+module.exports = Program;
+

@@ -2,9 +2,13 @@
   "name": "8.backendjavascript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"start": "node app.js"
+  "scripts": {
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
 }
